@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: ai-testcase-portal
+    runtime: python
+    region: singapore  # closest to Chennai
+    plan: free
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: uvicorn backend.app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false  # you'll set this manually in the Render dashboard
+      - key: PYTHON_VERSION
+        value: "3.11.6"
