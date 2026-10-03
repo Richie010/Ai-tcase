@@ -68,16 +68,15 @@ sample_data/
 ```bash
 cd backend
 python -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
+source .venv/bin/activate        
 pip install -r requirements.txt
 
 cp .env.example .env
-# Set your GEMINI_API_KEY → https://aistudio.google.com/apikey
+# Set your GEMINI_API_KEY 
 
 uvicorn app.main:app --reload --port 8000
 ```
 
-Open **http://localhost:8000** — upload a file from `sample_data/` to try it out.
 
 ---
 
