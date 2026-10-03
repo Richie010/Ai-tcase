@@ -132,3 +132,17 @@ from `sample_data/`.
 - **No Docker** — per your request, this is left as a plain Python app for
   now. A `Dockerfile`/`docker-compose.yml` can be added back in later
   without changing any of the above.
+
+
+![alt text](image.png)
+
+
+
+![alt text](image-1.png)
+
+
+
+![alt text](image-3.png)
+
+
+
